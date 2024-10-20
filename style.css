@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    color: #fff;
+    background-color: #383838;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.download-link {
+    display: flex;
+    background-color: #2a2a2a;
+    border-radius: 4px;
+    gap: 0.35rem;
+    width: 100%;
+    justify-content: center;
+    max-width: 150px;
+    padding: 8px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nav-icon, .menu-container {
+    display: none;
+}
+
+.menu-container .menu {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 450px) {
+    .first-container {
+        word-break: break-all;
+    }
+
+    .s-left {
+        word-break: break-all;
+    }
+
+    .first-container, .second-container, .third-container, .fourth-container {
+        overflow-y: auto;
+    }
+
+    .f-video {
+        width: 100%;
+        max-width: 240px;
+        height: auto;
+    }
+
+    .f-links {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 720px) {
+    .menu-container {
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        background: none;
+        border: none;
+        color: #fff;
+    }
+
+    .nav-icon, .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        background-color: #383838;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1.5rem !important;
+    }
+
+    .icon-container {
+        display: none;
+    }
+
+    .first-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        width: 100vw;
+    }
+
+    .f-first {
+        font-size: 3rem !important;
+        letter-spacing: 4px;
+    }
+
+    .f-second {
+        font-size: 4rem !important;
+    }
+
+    .f-third {
+        font-size: 1rem !important;
+    }
+
+    .s-left, .s-right {
+        width: 100% !important;
+    }
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .s-left, .second-right {
+        width: 100% !important;
+    }
+
+    .second-right {
+        text-align: center;
+    }
+
+    .s-title {
+        text-align: center;
+    }
+
+    .t-msgs {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 2rem !important;
+    }
+
+    .t-left, .t-right {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 999px) {
+    .t-msgs {
+        display: flex;
+        padding: 2rem !important;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .f-left {
+        display: flex;
+        justify-content: center !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .f-video {
+        padding: 0 1rem;
+        border-radius: 8px !important;
+    }
+
+    .f-right {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .f-btn {
+        margin: auto !important;
+        width: 100%;
+    }
+
+    .f-desc {
+        padding: 2rem 0 !important;
+    }
+}
+
+.first-container {
+    background-image: url('src/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 4rem;
+    min-height: 100vh;
+    color: #eee;
+}
+
+.f-title {
+    display: flex;
+    flex-direction: column;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    margin-top: 8rem;
+    padding: 0 1rem;
+}
+
+.f-first {
+    font-size: 4rem;
+    letter-spacing: 4px;
+}
+
+.f-second {
+    font-size: 5.5rem;
+}
+
+.f-third {
+    font-size: 1.85rem;
+}
+
+.second-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.s-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+.second-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.s-first {
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    color: #3a3a3a;
+}
+
+.s-second {
+    font-size: 3rem;
+    color: #3a3a3a;
+}
+
+.s-third {
+    font-size: 1.05rem;
+    color: #3a3a3a;
+}
+
+.s-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #3a3a3a;
+}
+
+.s-msg {
+    color: #4c4c4c;
+}
+
+.third-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0f272d;
+    padding: 1rem;
+}
+
+.t-header {
+    font-size: 2.25rem;
+    text-align: center;
+    padding: 2rem;
+    color: #eee;
+}
+
+.t-msgs {
+    display: flex;
+    padding: 0 16rem;
+}
+
+.t-left {
+    width: 50%;
+    padding: 0 1rem 0 0;
+}
+
+.t-right {
+    width: 50%;
+    padding: 0 0 0 1rem;
+}
+
+.t-titles {
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #eee;
+}
+
+.t-datas {
+    color: #ccc;
+}
+
+.fourth-container {
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.f-links {
+    display: flex;
+    list-style-type: none;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 5rem 2rem 3rem;
+    color: #3a3a3a;
+}
+
+.f-links li {
+    cursor: pointer;
+}
+
+.f-links li.active {
+    color: #1378d0;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.f-video {
+    width: 100%;
+    max-width: 500px;
+    height: 320px;
+    border-radius: 8px;
+}
+
+.f-left {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+}
+
+.f-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.f-desc {
+    color: #1a1a1a;
+    padding: 0 14rem 0 2rem;
+    text-align: justify;
+}
+
+.f-btn {
+    margin: 0 14rem 0 2rem;
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: none;
+    background-color: #3da5ff;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 180px;
+    transition: 0.3s ease-in-out;
+}
+
+.f-btn:hover {
+    background-color: #1378d0;
+}
+
+/* animations */
+.f-title{
+    transition: 1s ease-in-out;
+    transform: scale(0);
+    opacity: 0;
+}
+.f-title-animate {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.s-left{
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    transform: translateX(-20%);
+    opacity: 0;
+}
+.s-left-animate{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.second-right{
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    transform: translateY(20%);
+    opacity: 0;
+}
+.second-right-animate{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.t-header{
+    transition: 1s ease-in-out;
+    transform: scale(0);
+    opacity: 0;
+}
+.t-header-animate {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.t-left{
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    transform: translateX(-20%);
+    opacity: 0;
+}
+.t-left-animate{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.t-right{
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    transform: translateX(20%);
+    opacity: 0;
+}
+.t-right-animate{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.fourth-container{
+    transition: 1s ease-in-out;
+    opacity: 0;
+}
+.fourth-container-animate{
+    opacity: 1;
+}
