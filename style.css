@@ -60,7 +60,15 @@ a {
     display: flex;
     justify-content: center;
 }
-
+.nav-title-icon{
+    background-color:#2a2a2a;
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media (max-width: 450px) {
     .first-container {
